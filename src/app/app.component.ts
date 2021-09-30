@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+loadedfeature: string | undefined;
+
+onSelectFeature(feature: string){
+  this.loadedfeature=feature;
+  console.log("hello"+feature);
+}
 
 }
