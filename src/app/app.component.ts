@@ -10,7 +10,6 @@ loadedfeature: string | undefined;
 
 onSelectFeature(feature: string){
   this.loadedfeature=feature;
-  console.log("hello"+feature);
 }
 
 }
