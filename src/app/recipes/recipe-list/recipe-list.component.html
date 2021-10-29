@@ -8,7 +8,6 @@
     <div class="col-xs-12">
         <div *ngFor="let recipeEL of recipes">
         <app-recipe-item [selectedRecipe] = "recipeEL"
-        (recipeSelector)="onRecipeSelected(recipeEL)" 
         ></app-recipe-item>
         </div>
     </div>
