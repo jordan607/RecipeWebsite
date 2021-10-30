@@ -16,4 +16,13 @@ export class ShoppingListService{
         this.ingredients.push(passedaIngredient)
         this.ingredientChanged.emit(this.ingredients.slice())
       }
+
+      addIngredientfromRecipe(ingredients: Ingredient[]){
+        
+        // for(let ingredient of ingredients){
+        //   this.addedIngredients(ingredient)
+        // }
+        this.ingredients.push(...ingredients)
+        this.ingredientChanged.emit(this.ingredients.slice())
+      }
 }
